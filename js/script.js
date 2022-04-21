@@ -40,13 +40,14 @@ function getDifficulty() {
         sq.innerHTML = `<span>${getRandomNumber(1, squares)}</span>`;
 
         sq.addEventListener('click', function(){
-            this.classList.add('clicked')
+            this.classList.add('clicked', 'light')
         });
     }
 
     console.log(grid);
 
     const casualNumber = getRandomNumber(1, squares);
+
 }
 
 
@@ -57,10 +58,18 @@ function getDifficulty() {
  * @returns 
  */
 
-
 function getRandomNumber(min, max) {
 
     return Math.floor(Math.random() * (max - min + 1) + min);
 
 }
 
+
+function checkNumber(){
+
+    let flag = false;
+
+    if(arrRandomNumber.includes(getRandomNumber)){
+
+    }
+}

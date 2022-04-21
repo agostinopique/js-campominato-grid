@@ -54,6 +54,9 @@ span {
     display: none;
 }
 
+.light {
+    background-color: rgb(81, 133, 246);
+}
 .square_100 {
     width: calc(100% / 10);
     height: calc(100% / 10);
